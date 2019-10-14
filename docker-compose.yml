@@ -1,0 +1,9 @@
+version: '3.4'
+
+services:
+  notesmicroservice:
+    image: ${DOCKER_REGISTRY-}notesmicroservice
+    build:
+      context: .
+      dockerfile: NotesMicroservice/Dockerfile
+      
